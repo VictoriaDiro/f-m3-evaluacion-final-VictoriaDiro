@@ -2,6 +2,7 @@ import React from 'react';
 import { FetchPotter } from './services/FetchPotter';
 import CharacterList from './components/CharacterList';
 import CharacterCard from './components/CharacterCard';
+import Filters from './components/Filters';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -52,15 +53,18 @@ class App extends React.Component {
   }
 
   render() {
-    const {potterList, filterName} = this.state;
+    const {potterList, filterName, handleNameFilter} = this.state;
     return (
 
       <div className="App">
+        <Filters></Filters>
+
         <Switch>
+
 
           <Route exact path="/" render={() => <CharacterList
             potterList={potterList}
-            handleNameFilter={this.handleNameFilter}
+            handleNameFilter={handleNameFilter}
             filterName={filterName}
             />
           } />

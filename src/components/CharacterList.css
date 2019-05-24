@@ -1,0 +1,25 @@
+.list__container{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-gap: 10px;
+}
+
+.list__item {
+  list-style: none;
+  background-color: orangered;
+  border: darkgray;
+}
+
+.image__list {
+  width: 100px;
+}
+
+.name__list {
+  text-decoration: none;
+  color: white;
+}
+
+.house__list {
+  text-decoration: none;
+  color: white;
+}

@@ -11,8 +11,6 @@ class CharacterCard extends React.Component {
     const potterid = this.props.match.params.id;
 
     const potte = potterList[potterid];
-    console.log(potterList)
-
 
     return(
       <React.Fragment>
@@ -20,8 +18,7 @@ class CharacterCard extends React.Component {
           <div className="card">
             <h2 className="potterName">{potte.name}</h2>
             <img src={potte.image} alt={potte.name} />
-
-            <p>Hola</p>
+            <h3 className="house">{potte.house}</h3>
           </div>
           <Link to="/">Volver</Link>
 
