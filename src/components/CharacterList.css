@@ -1,25 +1,28 @@
 .list__container{
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
 }
 
 .list__item {
+  width: 220px;
   list-style: none;
-  background-color: orangered;
-  border: darkgray;
+  background-color: rgb(251, 143, 104);
+  border: 2px solid rgb(105, 105, 105);
 }
 
 .image__list {
-  width: 100px;
+  height: 300px;
+  background-image: cover;
+  background-size: cover;
 }
 
 .name__list {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .house__list {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }

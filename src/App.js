@@ -57,10 +57,11 @@ class App extends React.Component {
     return (
 
       <div className="App">
+
+        <img className="image__header" src="/images/harry-potter-logo.png" alt="Harry Potter Logo" />
         <Filters></Filters>
 
         <Switch>
-
 
           <Route exact path="/" render={() => <CharacterList
             potterList={potterList}

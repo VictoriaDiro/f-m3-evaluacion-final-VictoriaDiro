@@ -13,9 +13,10 @@ class characterList extends React.Component {
             <li className="list__item" key={item.id}>
 
             <Link to={`/character/${item.id}`}>
-            <img className="image__list" src={item.image} alt={item.name} />
-            <h3 className="name__list">{item.name}</h3>
-            <h2 className="house__list">{item.house}</h2>
+            <div className="image__list" style={{ backgroundImage: `url(${item.image})`}} alt={item.name} ></div>
+
+            <h2 className="name__list">{item.name}</h2>
+            <h3 className="house__list">{item.house}</h3>
             </Link>
           </li>
           )

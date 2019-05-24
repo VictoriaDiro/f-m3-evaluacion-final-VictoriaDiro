@@ -16,8 +16,8 @@ class CharacterCard extends React.Component {
       <React.Fragment>
 
           <div className="card">
-            <h2 className="potterName">{potte.name}</h2>
-            <img src={potte.image} alt={potte.name} />
+            <h2 className="name_card">{potte.name}</h2>
+            <img className="image__card" style={{ backgroundImage: `url(${potte.image})`}} alt={potte.name} />
             <h3 className="house">{potte.house}</h3>
           </div>
           <Link to="/">Volver</Link>
