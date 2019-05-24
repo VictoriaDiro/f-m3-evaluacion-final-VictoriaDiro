@@ -4,8 +4,10 @@ class Filters extends React.Component {
   render() {
     const { filterName, handleNameFilter } = this.props;
     return (
-
-      <input type="text" value={filterName}  onChange={handleNameFilter}/>
+      <div className="filter__container">
+        <h3 className="search__character-label">Busca tu personaje</h3>
+        <input className="search__input" type="text" value={filterName}  onChange={handleNameFilter}/>
+      </div>
     )
   }
 }

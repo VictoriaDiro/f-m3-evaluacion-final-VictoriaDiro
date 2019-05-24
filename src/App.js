@@ -2,6 +2,7 @@ import React from 'react';
 import { FetchPotter } from './services/FetchPotter';
 import CharacterList from './components/CharacterList';
 import CharacterCard from './components/CharacterCard';
+import HarryPotterLogo from './images/HarryPotterLogo.png';
 import Filters from './components/Filters';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
@@ -58,8 +59,10 @@ class App extends React.Component {
 
       <div className="App">
 
-        <img className="image__header" src="/images/harry-potter-logo.png" alt="Harry Potter Logo" />
-        <Filters></Filters>
+        <div className="search__container">
+          <img className="image__header" src={HarryPotterLogo} alt="Harry Potter Logo" />
+          <Filters></Filters>
+        </div>
 
         <Switch>
 
@@ -69,7 +72,7 @@ class App extends React.Component {
             filterName={filterName}
             />
           } />
-          <Route path="/character/:id" render={(takeParams) => (<CharacterCard      match={takeParams.match}
+          <Route path="/character/:id" render={(takeParams) => (<CharacterCard match={takeParams.match}
             potterList={potterList}
             resetFilters={this.resetFilters}
           /> )}

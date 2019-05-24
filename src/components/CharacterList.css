@@ -9,6 +9,7 @@
   list-style: none;
   background-color: rgb(251, 143, 104);
   border: 2px solid rgb(105, 105, 105);
+  text-align: center;
 }
 
 .image__list {
@@ -24,5 +25,5 @@
 
 .house__list {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255)
 }

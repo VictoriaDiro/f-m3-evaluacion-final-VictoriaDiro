@@ -25,11 +25,10 @@ class characterList extends React.Component {
 
   render() {
 
-    // const { handleNameFilter } = this.props;
+    const { handleNameFilter } = this.props;
 
     return (
       <div className="listContainer">
-        {/* <input type="text" onChange={handleNameFilter} /> */}
         <ul className="list__container">
           {this.paintPotterList()}
         </ul>
