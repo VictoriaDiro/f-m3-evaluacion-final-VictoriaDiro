@@ -17,7 +17,7 @@ class characterCard extends React.Component {
 
           <div className="card">
             <h2 className="potterName">{potte.name}</h2>
-            <img src={potte.image} alt="potte.name" />
+            <img src={potte.image} alt={potte.name} />
           </div>
 
           <Link to="/">Volver</Link>

@@ -32,11 +32,13 @@ class App extends React.Component {
       .then(data => {
 
         const newData = data.map((item, index) => {
-          return {...data, id: `character-${index}`};
-        });
+          return {...item, id: `character-${index}`};
 
+        });
+        console.log(newData)
         this.setState({
-          potterLsit: newData
+          potterList: newData
+
         });
       });
   }
