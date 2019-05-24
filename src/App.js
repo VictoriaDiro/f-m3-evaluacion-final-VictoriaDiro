@@ -19,6 +19,7 @@ class App extends React.Component {
 
   componentDidMount(){
     this.getPotter();
+
   }
 
   resetFilters() {
@@ -32,10 +33,9 @@ class App extends React.Component {
       .then(data => {
 
         const newData = data.map((item, index) => {
-          return {...item, id: `character-${index}`};
-
+          return {...item, id: index};
         });
-        console.log(newData)
+
         this.setState({
           potterList: newData
 
@@ -64,10 +64,10 @@ class App extends React.Component {
             filterName={filterName}
             />
           } />
-          <Route path="/detail/:id" render={(takeParams) => <CharacterCard      params={takeParams}
+          <Route path="/character/:id" render={(takeParams) => (<CharacterCard      match={takeParams.match}
             potterList={potterList}
             resetFilters={this.resetFilters}
-            /> }
+          /> )}
           />
 
         </Switch>

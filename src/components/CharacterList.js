@@ -10,7 +10,7 @@ class characterList extends React.Component {
         .map((item, index) => {
           return (
             <li className="potterListItem" key={item.id}>
-            <Link to={`/characterCard/${item.id}`}>{item.name}</Link>
+            <Link to={`/character/${item.id}`}>{item.name}</Link>
           </li>
           )
         })
@@ -19,8 +19,6 @@ class characterList extends React.Component {
   render() {
 
     const { handleNameFilter } = this.props;
-
-
 
     return (
       <div className="listContainer">
