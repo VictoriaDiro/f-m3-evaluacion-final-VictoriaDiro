@@ -28,6 +28,22 @@
   padding-top: 70px;
 }
 
+.patronus__card {
+  text-transform: capitalize;
+}
+
+.fa-heartbeat {
+  padding-left: 10px;
+  font-size: 26px;
+  color: rgb(197, 0, 0);
+}
+
+.fa-skull {
+  padding-left: 10px;
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+}
+
 .return__link {
   margin-top: 25px;
   padding: 5px 15px 5px 15px;

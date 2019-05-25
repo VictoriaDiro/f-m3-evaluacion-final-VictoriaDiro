@@ -15,13 +15,13 @@ class App extends React.Component {
       potterList: [],
       filterName: ''
     };
+    this.getPotter = this.getPotter.bind(this);
     this.handleNameFilter = this.handleNameFilter.bind(this);
     this.resetFilters = this.resetFilters.bind(this);
   }
 
   componentDidMount(){
     this.getPotter();
-
   }
 
   resetFilters() {
@@ -61,7 +61,11 @@ class App extends React.Component {
 
         <div className="search__container">
           <img className="image__header" src={HarryPotterLogo} alt="Harry Potter Logo" />
-          <Filters onChange={handleNameFilter}></Filters>
+          <Filters
+            value={filterName}
+            onChange={handleNameFilter}
+            >
+          </Filters>
         </div>
 
         <Switch>

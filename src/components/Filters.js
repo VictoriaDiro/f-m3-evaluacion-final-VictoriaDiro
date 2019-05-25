@@ -7,7 +7,7 @@ class Filters extends React.Component {
     const { filterName, handleNameFilter } = this.props;
     return (
       <div className="filter__container">
-        <label htmlfor="search" className="search__label">Busca tu personaje</label>
+        <label htmlFor="search" className="search__label">Busca tu personaje</label>
         <input className="search__input" type="text" name="search" id="search"
         value={filterName}
         onChange={handleNameFilter}

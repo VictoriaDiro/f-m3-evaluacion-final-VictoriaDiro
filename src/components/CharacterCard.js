@@ -23,7 +23,7 @@ class CharacterCard extends React.Component {
             <h3 className="house__card">{`Casa: ${potte.house}`}</h3>
             <h3 className="year__card">{`Año de nacimiento: ${potte.yearOfBirth}`}</h3>
             <h3 className="patronus__card">{`Patronus: ${potte.patronus}`}</h3>
-            <h3 className="state__card">{`Estado: ${potte.alive ? 'Vivo' : 'Muerto'}`}</h3>
+            <h3 className="state__card">Estado: {potte.alive ? <i class="fas fa-heartbeat"></i> : <i class="fas fa-skull"></i>}</h3>
           </div>
         </div>
         <Link to="/" className="return__link">Volver</Link>

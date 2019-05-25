@@ -9,7 +9,7 @@ class characterList extends React.Component {
     const {potterList, filterName} = this.props;
       return potterList
         .filter(item => item.name.toUpperCase().toLowerCase().includes(filterName))
-        .map((item, index) => {
+        .map(item => {
           return (
             <li className="list__item" key={item.id}>
 
@@ -26,11 +26,9 @@ class characterList extends React.Component {
 
   render() {
 
-    const { handleNameFilter } = this.props;
-
     return (
       <div className="listContainer">
-        <ul className="list__container" handleNameFilter={handleNameFilter}>
+        <ul className="list__container">
           {this.paintPotterList()}
         </ul>
       </div>
