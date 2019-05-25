@@ -17,14 +17,16 @@ class CharacterCard extends React.Component {
       <React.Fragment>
 
         <div className="card">
-          <h2 className="name__card">{potte.name}</h2>
           <img className="image__card" style={{ backgroundImage: `url(${potte.image})`}} alt={potte.name} />
-          <h3 className="house__card">{potte.house}</h3>
-          <h3 className="year__card">{potte.yearOfBirth}</h3>
-          <h3 className="patronus__card">{potte.patronus}</h3>
-          <h3 className="state__card">{potte.alive}</h3>
+          <div className="info__container">
+            <h2 className="name__card">{potte.name}</h2>
+            <h3 className="house__card">{`Casa: ${potte.house}`}</h3>
+            <h3 className="year__card">{`Año de nacimiento: ${potte.yearOfBirth}`}</h3>
+            <h3 className="patronus__card">{`Patronus: ${potte.patronus}`}</h3>
+            <h3 className="state__card">{`Estado: ${potte.alive ? 'Vivo' : 'Muerto'}`}</h3>
+          </div>
         </div>
-        <Link to="/">Volver</Link>
+        <Link to="/" className="return__link">Volver</Link>
 
       </React.Fragment>
     );
