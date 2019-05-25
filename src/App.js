@@ -1,9 +1,9 @@
 import React from 'react';
-import { FetchPotter } from './services/FetchPotter';
 import CharacterList from './components/CharacterList';
 import CharacterCard from './components/CharacterCard';
-import HarryPotterLogo from './images/HarryPotterLogo.png';
 import Filters from './components/Filters';
+import HarryPotterLogo from './images/HarryPotterLogo.png';
+import { FetchPotter } from './services/FetchPotter';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -46,10 +46,10 @@ class App extends React.Component {
   }
 
   handleNameFilter(event) {
-    const buttonFilter = event.currentTarget.value;
+    const contentFilter = event.currentTarget.value;
 
     this.setState({
-      filterName: buttonFilter
+      filterName: contentFilter
     })
   }
 
@@ -61,7 +61,7 @@ class App extends React.Component {
 
         <div className="search__container">
           <img className="image__header" src={HarryPotterLogo} alt="Harry Potter Logo" />
-          <Filters></Filters>
+          <Filters onChange={handleNameFilter}></Filters>
         </div>
 
         <Switch>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './CharacterList.css'
 
@@ -29,12 +30,17 @@ class characterList extends React.Component {
 
     return (
       <div className="listContainer">
-        <ul className="list__container">
+        <ul className="list__container" handleNameFilter={handleNameFilter}>
           {this.paintPotterList()}
         </ul>
       </div>
     )
   }
+}
+
+characterList.propTypes = {
+  potterList: PropTypes.arrayOf(PropTypes.object),
+  filterName: PropTypes.string
 }
 
 export default characterList;
