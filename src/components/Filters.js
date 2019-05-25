@@ -4,7 +4,9 @@ import './Filters.css'
 
 class Filters extends React.Component {
   render() {
+
     const { filterName, handleNameFilter } = this.props;
+
     return (
       <div className="filter__container">
         <label htmlFor="search" className="search__label">Busca tu personaje</label>

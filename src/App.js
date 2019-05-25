@@ -54,7 +54,8 @@ class App extends React.Component {
   }
 
   render() {
-    const {potterList, filterName, handleNameFilter} = this.state;
+
+    const { potterList, filterName } = this.state;
     return (
 
       <div className="App">
@@ -63,7 +64,7 @@ class App extends React.Component {
           <img className="image__header" src={HarryPotterLogo} alt="Harry Potter Logo" />
           <Filters
             value={filterName}
-            onChange={handleNameFilter}
+            handleNameFilter={this.handleNameFilter}
             >
           </Filters>
         </div>
@@ -72,7 +73,7 @@ class App extends React.Component {
 
           <Route exact path="/" render={() => <CharacterList
             potterList={potterList}
-            handleNameFilter={handleNameFilter}
+            handleNameFilter={this.handleNameFilter}
             filterName={filterName}
             />
           } />
