@@ -6,6 +6,7 @@
   background-color: rgb(83, 83, 83);
   border: 5px solid rgb(255, 255, 255);
   border-radius: 5px;
+  box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.85);
 }
 
 .info__container {
@@ -54,4 +55,9 @@
   font-weight: bold;
   font-size: 20px;
   color: rgb(255, 255, 255);
+}
+
+.return__link:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.85);
 }

@@ -86,6 +86,9 @@ class App extends React.Component {
           />
 
         </Switch>
+        <footer>
+          <p>Make with <i class="fas fa-heart"></i> by Victoria Diro</p>
+        </footer>
       </div>
     )
   }
