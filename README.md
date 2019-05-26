@@ -15,5 +15,6 @@ Proyecto realizado con React que dispone de la siguiente estructura:
    |- images
    |- services
    |    |- FetchPotter
+`
 
-Make with <i class="fas fa-heart"></i> by Victoria Diro
+Make with ♥ by Victoria Diro
