@@ -8,24 +8,30 @@ class CharacterCard extends React.Component {
     this.props.resetFilters();
   }
 
+  componentDidMount(){
+    console.log(1);
+  }
+
   render() {
     const { potterList } = this.props;
-    const potterid = this.props.match.params.id;
-    const potte = potterList[potterid];
 
+    const potterId = this.props.match.params.id;
+    const potterItem = potterList[potterId];
+    
     return(
       <React.Fragment>
 
         <div className="card">
-          <img className="image__card" style={{ backgroundImage: `url(${potte.image})`}} alt={potte.name} />
+          <div className="image__card" style={{ backgroundImage: `url(${potterItem.image})`}} alt={potterItem.name} />
           <div className="info__container">
-            <h2 className="name__card">{potte.name}</h2>
-            <h3 className="house__card">{`Casa: ${potte.house}`}</h3>
-            <h3 className="year__card">{`Año de nacimiento: ${potte.yearOfBirth}`}</h3>
-            <h3 className="patronus__card">{`Patronus: ${potte.patronus}`}</h3>
-            <h3 className="state__card">Estado: {potte.alive ? <i class="fas fa-heartbeat"></i> : <i class="fas fa-skull"></i>}</h3>
+            <h2 className="name__card">{potterItem.name}</h2>
+            <h3 className="house__card">{`Casa: ${potterItem.house}`}</h3>
+            <h3 className="year__card">{`Año de nacimiento: ${potterItem.yearOfBirth}`}</h3>
+            <h3 className="patronus__card">{`Patronus: ${potterItem.patronus}`}</h3>
+            <h3 className="state__card">Estado: {potterItem.alive ? <i className="fas fa-heartbeat"></i> : <i className="fas fa-skull"></i>}</h3>
           </div>
         </div>
+
         <Link to="/" className="return__link">Volver</Link>
 
       </React.Fragment>

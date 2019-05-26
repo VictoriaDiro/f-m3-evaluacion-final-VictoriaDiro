@@ -33,7 +33,6 @@ class App extends React.Component {
   getPotter() {
     FetchPotter()
       .then(data => {
-
         const newData = data.map((item, index) => {
           return {...item, id: index};
         });
@@ -54,7 +53,6 @@ class App extends React.Component {
   }
 
   render() {
-
     const { potterList, filterName } = this.state;
     return (
 
@@ -71,16 +69,20 @@ class App extends React.Component {
 
         <Switch>
 
-          <Route exact path="/" render={() => <CharacterList
-            potterList={potterList}
-            handleNameFilter={this.handleNameFilter}
-            filterName={filterName}
+          <Route
+            exact path="/" render={() =>
+            <CharacterList
+              potterList={potterList}
+              handleNameFilter={this.handleNameFilter}
+              filterName={filterName}
             />
           } />
-          <Route path="/character/:id" render={(takeParams) => (<CharacterCard match={takeParams.match}
-            potterList={potterList}
-            resetFilters={this.resetFilters}
-          /> )}
+          <Route
+            path="/character/:id" render={props =>
+            <CharacterCard match={props.match}
+              potterList={potterList}
+              resetFilters={this.resetFilters}
+            /> }
           />
 
         </Switch>

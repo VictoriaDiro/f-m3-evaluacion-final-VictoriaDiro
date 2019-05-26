@@ -15,7 +15,6 @@ class characterList extends React.Component {
 
             <Link to={`/character/${item.id}`}>
             <div className="image__list" style={{ backgroundImage: `url(${item.image})`}} alt={item.name} ></div>
-
             <h2 className="name__list">{item.name}</h2>
             <h3 className="house__list">{item.house}</h3>
             </Link>
