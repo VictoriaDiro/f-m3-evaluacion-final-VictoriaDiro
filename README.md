@@ -21,4 +21,4 @@ Proyecto realizado con React que dispone de la siguiente estructura:
 
 ***
 
-Make with ♥ by Victoria Diro
+Made with ♥ by Victoria Diro
