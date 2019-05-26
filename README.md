@@ -6,6 +6,7 @@ Buscador de personajes de Harry Potter donde se puede seleccionar uno en concret
 
 Proyecto realizado con React que dispone de la siguiente estructura:
 
+```
 /
 `- _src
    |- components
@@ -16,5 +17,8 @@ Proyecto realizado con React que dispone de la siguiente estructura:
    |- services
    |    |- FetchPotter
 `
+```
+
+***
 
 Make with ♥ by Victoria Diro
