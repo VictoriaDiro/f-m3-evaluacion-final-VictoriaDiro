@@ -39,7 +39,6 @@ class App extends React.Component {
 
         this.setState({
           potterList: newData
-
         });
       });
   }

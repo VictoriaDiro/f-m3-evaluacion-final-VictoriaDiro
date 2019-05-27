@@ -8,7 +8,7 @@ class characterList extends React.Component {
   paintPotterList() {
     const {potterList, filterName} = this.props;
       return potterList
-        .filter(item => item.name.toUpperCase().toLowerCase().includes(filterName))
+        .filter(item => item.name.toLowerCase().includes(filterName.toLowerCase()))
         .map(item => {
           return (
             <li className="list__item" key={item.id}>
