@@ -57,25 +57,28 @@ class App extends React.Component {
 
       <div className="App">
 
-        <div className="search__container">
+        <div className="logo__container">
           <img className="image__header" src={HarryPotterLogo} alt="Harry Potter Logo" />
-          <Filters
-            value={filterName}
-            handleNameFilter={this.handleNameFilter}
-            >
-          </Filters>
-        </div>
+          </div>
 
         <Switch>
 
-          <Route
-            exact path="/" render={() =>
+          <Route exact path="/" render={() =>
+          <div className="filter__list-container">
+            <Filters
+              value={filterName}
+              handleNameFilter={this.handleNameFilter}
+            >
+            </Filters>
+
             <CharacterList
               potterList={potterList}
               handleNameFilter={this.handleNameFilter}
               filterName={filterName}
             />
+            </div>
           } />
+
           <Route
             path="/character/:id" render={props =>
             <CharacterCard match={props.match}

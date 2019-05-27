@@ -23,6 +23,8 @@ class CharacterCard extends React.Component {
 
         <div className="card">
 
+          <Link to="/" className="return__link">Volver</Link>
+
           {potterList.length < 1 ?
             <p classme="no__results">Sin resultados</p>
             :
@@ -40,8 +42,6 @@ class CharacterCard extends React.Component {
             </div>
           }
         </div>
-
-        <Link to="/" className="return__link">Volver</Link>
 
       </React.Fragment>
     );
