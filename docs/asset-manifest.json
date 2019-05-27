@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.60de3495.chunk.css",
+    "main.js": "/static/js/main.e3860e08.chunk.js",
+    "main.js.map": "/static/js/main.e3860e08.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.a7e49364.chunk.js": "/static/js/2.a7e49364.chunk.js",
+    "static/js/2.a7e49364.chunk.js.map": "/static/js/2.a7e49364.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4f51310c3c2dd725ab6d4de415e8520e.js": "/precache-manifest.4f51310c3c2dd725ab6d4de415e8520e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.60de3495.chunk.css.map": "/static/css/main.60de3495.chunk.css.map",
+    "static/media/HarryPotterLogo.png": "/static/media/HarryPotterLogo.c0d48dc1.png",
+    "static/media/index.css": "/static/media/Hogwarts.08f909d5.jpg"
+  }
+}
